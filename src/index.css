@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@theme {
+  /* colors======================= */
+  /* *** primary *** */
+  --color-primary: #6610f2;
+  --color-primary-hover: #6610f2a8;
+  --color-primary-50: #6610f21c;
+  --color-primary-Light: #f0e7fe;
+  /* *** secondary *** */
+  --color-secondary: #34c759;
+  --color-secondary-hover: #34c759b8;
+  /* *** error *** */
+  --color-error: #cc3434;
+  --color-error-hover: #cc34344f;
+  --color-error-50: #cc343466;
+  /* *** white *** */
+  --color-white: #ffffff;
+  --color-white-50: #f7f8fa;
+  --color-white-100: "#FDFDFD";
+
+  /* *** gray *** */
+  --color-gray-5: #f5f5f580;
+  --color-gray-10: #edf1f3cc;
+  --color-gray-15: #d0d1d5;
+  --color-gray-30: #f3f4f6;
+  --color-gray-40: #eaecef;
+  --color-gray-50: #edf1f3;
+  --color-gray-150: #616161;
+  --color-gray-text: #404040;
+  --color-gray-100: #f0e7fe;
+  --color-gray-200: #10182814;
+  --color-gray-500: #9a9a9a;
+  --color-gray-table: #f5f5f5;
+  /* *** black *** */
+  --color-black-50: #40404040;
+  --color-black-100: #030311b2;
+  --color-black-500: #030311;
+  /* *** white *** */
+  --color-white: #ffffff;
+
+  /* screen sizes======================= */
+  --breakpoint-xl: 1440px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-md: 1075px;
+  --breakpoint-md-2: 1024px;
+  --breakpoint-md-3: 900px;
+  --breakpoint-sm: 768px;
+  --breakpoint-xs: 640px;
+  --breakpoint-2xs: 480px;
+  --breakpoint-xs: 340px;
+  /*first container for nav bar and footer======================= */
+  --container-1-padding: 2rem;
+  --container-1-center: true;
+  /* second container for sections======================= */
+  --container-2-padding: 2rem;
+  --container-2-center: true;
+}
+
+@layer base {
+  .container-1,
+  .container-2 {
+    @apply mx-auto px-8;
+  }
+  .container-1 {
+    max-width: 1280px;
+  }
+  .container-2 {
+    max-width: 1356px;
+  }
+}
+:root {
+  direction: rtl;
+  text-align: right;
+  font-family: "Almarai", sans-serif;
+}
